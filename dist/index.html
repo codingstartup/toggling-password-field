@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Toggling Password Field</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app" :class="{hide: isHide}">
+  <input :type="type">
+
+  <svg viewBox="0 0 100 100" @click="isHide = !isHide">
+    <path stroke="#184098" fill="none" stroke-linecap="round" stroke-width="10" d="M10,50 Q50,10 90,50" class="eye-top"></path>
+    <path stroke="#184098" fill="none" stroke-linecap="round" stroke-width="10" d="M10,50 Q50,90 90,50" class="eye-bottom"></path>
+    <circle fill="none" stroke="#184098" stroke-width="10" cx="50" cy="50" r="15" stroke-linecap="round" class="eye-ball" transform="rotate(90 50 50)"></circle>
+  </svg>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

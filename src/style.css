@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  width: 100px;
+  cursor: pointer;
+}
+
+.eye-ball {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 0;
+  transition: .3s all ease-in-out;
+  transition-delay: .1s;
+}
+
+.hide .eye-ball {
+  stroke-dashoffset: 100;
+  transition-delay: 0;
+}
+
+.eye-top {
+  transition: .3s all ease-in-out;
+}
+
+.hide .eye-top {
+  d: path("M10,50 Q50,90 90,50");
+  transition-delay: .2s;
+}
+
+input[type="text"],
+input[type="password"] {
+  height: 50px;
+  width: 400px;
+  outline: none;
+  padding: 0 10px;
+  border: 10px solid #184098;
+  border-radius: 6px;
+  margin-right: 20px;
+  font-size: 24px;
+  font-family: Helvetica;
+  color: #184098;
+  
+  background-image: linear-gradient(0deg, #ffffff 0%, #ffffff 50%, #184098 50%, #184098 100%);
+  background-size: 100% 200%;
+  background-position: 0% 100%;
+  transition: .3s all ease-in-out;
+  transition-delay: .1s;
+}
+
+.hide input[type="text"],
+.hide input[type="password"] {
+  background-position: 100% 200%;
+  color: #fff;
+}
